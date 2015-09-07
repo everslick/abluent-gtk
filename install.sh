@@ -33,7 +33,7 @@ if [ -e Abluent ] ; then
 fi
 echo "  copying new files ..."
 cp -r $SRC ./Abluent
-echo "  deleting hidden files ..."
+echo "  deleting unneeded files ..."
 cd ./Abluent && rm -rf .git* install.sh
 echo "done."
 echo
