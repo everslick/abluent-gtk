@@ -26,6 +26,7 @@ if [ $EUID != 0 ] ; then
     exit $?
 fi
 echo "Installing GTK themes..."
+mkdir -p /usr/share/themes
 cd /usr/share/themes
 if [ -e Abluent ] ; then
     echo "  renamimg original Abluent directory to Abluent.$BAK"
